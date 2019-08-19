@@ -134,19 +134,19 @@
     <footer>
       <ul class="social_networks">
         <li><a href="#">
-          <img src="#" title="Twitter">
+          <img src="#" alt="Twitter">
           </a>
         </li>
         <li><a href="#">
-          <img src="#" title="Instagram">
+          <img src="#" alt="Instagram">
           </a>
         </li>
         <li><a href="#">
-          <img src="#" title="Facebook">
+          <img src="#" alt="Facebook">
           </a>
         </li>
         <li><a href="#">
-          <img src="#" title="Vkontakte">
+          <img src="#" alt="Vkontakte">
           </a>
         </li>
       </ul>
