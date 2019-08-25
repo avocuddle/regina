@@ -49,16 +49,17 @@
       <div class="filter">
         <div class="filter__sort">
           <span class="filter__name">Сортировка</span>
-          <button class="filter_down">по популярности</button>
+          <button class="filter__down">по популярности</button>
         </div>
         <div class="filter__price">
           <span class="filter__name">Цена: 100 р. - 500 руб.</span>
-          <div class="filter_progress"></div><!--что-то невероятно космическое-->
+          <div class="filter__progress"></div><!--что-то невероятно космическое-->
         </div>
         <div class="filter__fat">
           <span class="filter__name">Жирность:</span>
           <ul class="filter__percent fat">
-            <li class="fat__zero">
+            <li class="fat__zero"><!--нужно ли однотипные блоки называть разными классами? скорее, нет, чем да?
+              везде ниже однотиное название-->
               <button class="fat__button"></button>
               <span class="fat__percent">0%</span>
             </li>
@@ -105,9 +106,9 @@
       </div>
       <ul class="variety">
         <li class="variety__block">
-          <div class=variety__item item>
-            <img src="#" class="item__preview" alt="Сливочное с апельсиновым джемом мороженое">
-            <!--изображение 3 с главной-->
+          <div class="variety__item item">
+            <img src="#" class="item__preview" alt="Сливочное с апельсиновым джемом">
+            <!--изображение 1 с главной-->
             <p class="item__price">310 &#x20bd;
               <span class="item__weight">/кг</span>
             </p>
@@ -116,7 +117,7 @@
         </li>
         <li class="variety__block">
           <div class="variety__item item">
-            <img src="#" class="item__preview" alt="Сливочно-кофейное мороженое"><!--изображение 2-->
+            <img src="#" class="item__preview" alt="Сливочно-кофейное"><!--изображение 2-->
             <p class="item__price">380 &#x20bd;
               <span class="item__weight">/кг</span>
             </p>
@@ -125,7 +126,7 @@
         </li>
         <li class="variety__block">
           <div class="variety__item item">
-            <img src="#" class="item__preview" alt="Сливочно-клубничное мороженое"><!--изображение 3-->
+            <img src="#" class="item__preview" alt="Сливочно-клубничное"><!--изображение 3-->
             <p class="item__price">355 &#x20bd;
               <span class="item__weight">/кг</span>
             </p>
@@ -134,7 +135,7 @@
         </li>
         <li class="variety__block">
           <div class="variety__item item">
-            <img src="#" class="item__preview" alt="Сливочное крем-брюле"><!--изображение 3-->
+            <img src="#" class="item__preview" alt="Сливочное крем-брюле"><!--изображение 4-->
             <p class="item__price">415 &#x20bd;
               <span class="item__weight">/кг</span>
             </p>
@@ -143,7 +144,7 @@
         </li>
         <li class="variety__block">
           <div class="variety__item item">
-            <img src="#" class="item__preview" alt="Сливочное с брусникой"><!--изображение 3-->
+            <img src="#" class="item__preview" alt="Сливочное с брусникой">
             <p class="item__price">325 &#x20bd;
               <span class="item__weight">/кг</span>
             </p>
@@ -152,7 +153,7 @@
         </li>
         <li class="variety__block">
           <div class="variety__item item">
-            <img src="#" class="item__preview" alt="Сливочное с черникой"><!--изображение 3-->
+            <img src="#" class="item__preview" alt="Сливочное с черникой">
             <p class="item__price">410 &#x20bd;
               <span class="item__weight">/кг</span>
             </p>
@@ -161,7 +162,7 @@
         </li>
         <li class="variety__block">
           <div class="variety__item item">
-            <img src="#" class="item__preview" alt="Cливочно-лимонное"><!--изображение 3-->
+            <img src="#" class="item__preview" alt="Cливочно-лимонное">
             <p class="item__price">375 &#x20bd;
               <span class="item__weight">/кг</span>
             </p>
@@ -170,7 +171,7 @@
         </li>
         <li class="variety__block">
           <div class="variety__item item">
-            <img src="#" class="item__preview" alt="Cливочное со стружкой"><!--изображение 3-->
+            <img src="#" class="item__preview" alt="Cливочное со стружкой">
             <p class="item__price">320 &#x20bd;
               <span class="item__weight">/кг</span>
             </p>
@@ -179,7 +180,7 @@
         </li>
         <li class="variety__block">
           <div class="variety__item item">
-            <img src="#" class="item__preview" alt="Cливочно-ванильное"><!--изображение 3-->
+            <img src="#" class="item__preview" alt="Cливочно-ванильное">
             <p class="item__price">440 &#x20bd;
               <span class="item__weight">/кг</span>
             </p>
@@ -188,7 +189,7 @@
         </li>
         <li class="variety__block">
           <div class="variety__item item">
-            <img src="#" class="item__preview" alt="Cливочное с ментолом"><!--изображение 3-->
+            <img src="#" class="item__preview" alt="Cливочное с ментолом">
             <p class="item__price">435 &#x20bd;
               <span class="item__weight">/кг</span>
             </p>
@@ -197,7 +198,7 @@
         </li>
         <li class="variety__block">
           <div class="variety__item item">
-            <img src="#" class="item__preview" alt="Cливочное с темным шоколадом"><!--изображение 3-->
+            <img src="#" class="item__preview" alt="Cливочное с темным шоколадом">
             <p class="item__price">355 &#x20bd;
               <span class="item__weight">/кг</span>
             </p>
@@ -206,7 +207,7 @@
         </li>
         <li class="variety__block">
           <div class="variety__item item">
-            <img src="#" class="item__preview" alt="Cливочное с мятой"><!--изображение 3-->
+            <img src="#" class="item__preview" alt="Cливочное с мятой">
             <p class="item__weight__price">420 &#x20bd;
               <span class="item__weight">/кг</span>
             </p>
