@@ -26,9 +26,25 @@
         </ul>
       </nav>
       <div class="header__btn btn">
-        <button class="btn__search"></button><!--форма поиска+иконка через псевдо-->
-        <button class="btn__log-in">Вход</button><!--форма входа+иконка входа через псевдоэлемент-->
-        <button class="tbtn__basket">Пусто</button><!--здесь должна быть ваша корзина+
+        <div class="btn__search">
+          <button class="btn__search-btn"></button><!--форма поиска+иконка через псевдо-->
+          <div class="btn__search-form">
+            <span class="btn__search-text">Что ищем?</span>
+          </div>
+        </div>
+        <div class="btn__login">
+          <button class="btn__login-btn">Вход</button><!--форма входа+иконка входа через псевдоэлемент-->
+          <div class="btn__login-form">
+            <input name="email" required type="email" placeholder="Электронная почта">
+            <input type="password" inputmode="numeric" placeholder="Пароль">
+            <button type="submit" class="button">Войти<button>
+            <div class="btn__login-password">
+              <a href="#" class="btn__login-password-forget">Забыли пароль?</a>
+              <a href="#" class="btn__login-password-new">Новая регистрация</a>
+            </div>
+          </div>
+        </div>
+        <button class="btn__basket">Пусто</button><!--здесь должна быть ваша корзина+
             иконка входа через псевдоэлемент-->
       </div>
       <p class="header__data data">c 10 до 20, ежедневно
@@ -41,17 +57,17 @@
           <li class="slider__item">
             <img src="#" class="slider__image">
             <p class="slider__moto">Крем-брюле и пломбир с малиновым джемом</p>
-            <a href="#" class="slider__button">Давайте оба</a>
+            <a href="#" class="button">Давайте оба</a>
           </li>
           <li class="slider__item">
             <img src="#" class="slider__image">
             <p class="slider__moto"></p>
-            <a href="#" class="slider__button"></a>
+            <a href="#" class="button"></a>
           </li>
           <li class="slider__item">
             <img src="#" class="slider__image">
             <p class="slider__moto"></p>
-            <a href="#" class="slider__button"></a>
+            <a href="#" class="button"></a>
           </li>
         </ul>
         <div class="slider__switch">
@@ -65,13 +81,13 @@
           <h2 class="promo__title">Малинка даром!<h2>
           <p class="promo__offer">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ
           банку малинового варенья бесплатно.</p>
-          <a href="#" class="promo__link">Хочу варенье!</a>
+          <a href="#" class="button">Хочу варенье!</a>
         </li>
         <li class="promo__block">
             <h2 class="promo__title">Шоколадки даром!<h2>
             <p class="promo__offer">При покупке 2 кг пломбира, добавим в ваш заказ упаковку
             вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-            <a href="#" class="promo__link">Хочу шоколадки!</a>
+            <a href="#" class="button">Хочу шоколадки!</a>
         </li>
       </ul>
       <ul class="variety">
@@ -124,14 +140,17 @@
         <p class="about__natural">Для приготовления мороженого используются настоящие сливки и молоко
         высочайшего класса. Все дополнительные ингредиенты и добавки произведены из
         натурального, экологически чистого сырья.</p>
+        <p class="about__buying">Закупка ингредиентов производится толкьо у проверенных фермерских
+        хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
         <p class="about__delivery">Доставка нашего мороженогдо заказчиков осуществляется в специальном
         термопаке, который не дает мороженому растаять в пути и позволяет сохранить
         первосходный вкус.</p>
       </div>
-      <div class="news"
+      <div class="news">
         <div class="news__blog">
           <p class="news__name">Новое в нашем блоге</p>
-          <a href="#" class="news__limk">10 способов сервировки фруктовых щербетов к столу</a></p>
+          <a href="#" class="news__link">10 способов сервировки фруктовых щербетов к столу</a>
+        </div>
       </div>
       <form class="news__form">
         <p class="news__surscribe">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
@@ -139,7 +158,7 @@
         ненужной ерунды. Честно =)</p>
         <div class="news__email">
           <input name="email" required type="email" placeholder="Электронная почта">
-          <button type="submit">Отправить<button>
+          <button type="submit" class="button">Отправить<button>
         </div><!--не уверена, что точно прописала форму обратной связи-->
       </form>
       <div class="map">
@@ -152,8 +171,16 @@
             <span class="map__phone">8 812 450 25 25</span>
           (с 10 до 20 ежедневно)
           </p>
-          <a href="#" class="map__callback">Форма обратной связи</a>
+          <a href="#" class="button">Форма обратной связи</a>
         </div>
+      </div>
+      <div class="map__popup">
+        <p class="map__popup-text">Мы обязательно вам ответим!</p>
+        <div class="map__popup-close">X</div>
+        <input type="text" placeholder="Как вас зовут?">
+        <input name="email" required type="email" placeholder="Ваша почта для ответа?">
+        <input name="text" required type="email" placeholder="Напишите что-нибудь...">
+        <button type="submit" class="button">Отправить<button>
       </div>
     </main>
     <footer>
@@ -180,18 +207,11 @@
         </li>
       </ul>
       <nav class="footer">
-        <li class="footer__nav">
-          <a href="#" class="footer__link">Для поставщиков</a>
-        </li><!--иконка перед строкой-->
-        <li class="footer__nav">
-          <a href="#" class="footer__link">О производстве</a>
-        </li>
-        <li class="footer__nav">
-          <a href="#" class="footer__link">Наши документы</a>
-        </li>
-        <li class="footer__nav">
-          <a href="#" class="footer__link">Экологические стандарты</a>
-        </li>
+        <a href="#" class="footer__link">Для поставщиков</a>
+        <!--иконка перед строкой-->
+        <a href="#" class="footer__link">О производстве</a>
+        <a href="#" class="footer__link">Наши документы</a>
+        <a href="#" class="footer__link">Экологические стандарты</a>
       </nav>
       <div class="made">
         <img src="#" class="made__logo" alt="HTML Academy">
